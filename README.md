@@ -10,7 +10,7 @@ My developer portfolio showcasing web projects, skills, and client testimonials.
 ### About
 I’m a frontend developer focused on building fast, clean websites for brands and vendors. This portfolio highlights real projects I’ve shipped: restaurant sites, event ticket systems, solar company sites, and mini e-commerce stores with WhatsApp checkout.
 
-No frameworks, no bloat. Just performance + clean UX.
+No bloat. Just performance + clean UX.
 
 ### Features
 - **Project Showcase**: Detailed modals with screenshots, tech stack, and results for each project
