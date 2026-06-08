@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paul Odugbemi| Web Developer Portfolio</title>
+<meta name="description" content="Frontend developer building fast, modern websites that convert. React, Next.js, Tailwind. Available for freelance work.">
+<meta name="keywords" content="web developer Nigeria, React developer, freelance web designer">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <!-- Loader -->
+<!-- LOADER -->
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-content">
+    <div class="loader-logo">youngimmortal studio</div>
+    <h2 class="loader-heading">Crafting Digital Experiences</h2> <!-- heading above bar -->
+    <div class="loader-bar">
+      <div class="loader-progress"></div>
+    </div>
+    <p>Building Experience...</p>
+  </div>
+</div>
+
+  <!-- 3D Canvas -->
+  <div id="canvas-container"></div>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">YM.</div>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+    <div class="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-content">
+     <h1>Hi, <span class="typewriter"></span></h1>
+      <p>I transform ideas into high-performing digital experiences using modern web technologies and clean, scalable code.</p>
+      <p>From eCommerce platforms and business websites to custom web applications, I build solutions that are visually stunning, responsive across all devices, and optimized for performance.</p>
+      <p class="cta-text">Let's build something exceptional together.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn magnetic">View My Work</a>
+        <a href="#contact" class="btn-outline magnetic">Hire Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>Building Digital Experiences That Users Love</h2>
+    <p>I'm a passionate Frontend Developer specializing in creating modern, responsive, and user-focused web applications.</p>
+    <p>With expertise in HTML, CSS, JavaScript, React.js, Bootstrap, Tailwind CSS, W3.CSS, and Firebase, I help businesses establish a powerful online presence through clean design, seamless functionality, and exceptional user experiences.</p>
+    <p>My focus goes beyond writing code. I build digital products that solve real problems, engage users, and support business growth.</p>
+  </section>
+
+  <!-- Services -->
+ <section id="services">
+  <h2>What I Can Build For You</h2>
+  <div class="services-grid">
+    
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+      <h3>E-Commerce Websites</h3>
+      <p>Fully functional online stores with product management, shopping carts, secure checkout flows, and intuitive admin dashboards.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fa-solid fa-globe"></i>
+      </div>
+      <h3>Business Websites</h3>
+      <p>Professional websites that establish credibility, attract customers, and showcase your brand effectively.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fa-solid fa-code"></i>
+      </div>
+      <h3>Web Applications</h3>
+      <p>Custom solutions tailored to your unique business needs using modern frontend technologies.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fa-solid fa-shield-halved"></i>
+      </div>
+      <h3>Authentication Systems</h3>
+      <p>Secure user registration, login, password recovery, and role-based access control powered by Firebase Authentication.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fa-solid fa-gauge-high"></i>
+      </div>
+      <h3>Admin Dashboards</h3>
+      <p>Powerful dashboards for managing products, users, orders, content, and analytics.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fa-solid fa-ticket"></i>
+      </div>
+      <h3>Event & Ticketing Platforms</h3>
+      <p>Custom event systems with automated ticket generation, access codes, and attendee management.</p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Projects -->
+ <section id="projects">
+  <h2>Featured Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card" data-modal="modal-eat-chill">
+      <img src="images/eatnchill1.jpg" alt="Eat & Chill Restaurant">
+      <h3>Eat & Chill Restaurant Website</h3>
+      <p>HTML + CSS + JavaScript</p>
+      <div class="card-buttons">
+        <a href="https://foodies-ten-plum.vercel.app" target="_blank" class="btn" onclick="event.stopPropagation()">Live Demo</a>
+        <a href="https://github.com/youngimmortal-p/foodies.git" target="_blank" class="btn-outline" onclick="event.stopPropagation()">Code</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-modal="modal-eat-chill-admin">
+      <img src="images/foodies1.jpg" alt="Restaurant Admin">
+      <h3>Foodies</h3>
+      <p>React + Tailwind + Firebase</p>
+      <div class="card-buttons">
+        <a href="https://resturant-frontend-one.vercel.app" target="_blank" class="btn" onclick="event.stopPropagation()">Live Demo</a>
+        <a href="https://github.com/youngimmortal-p/resturant-frontend.git" target="_blank" class="btn-outline" onclick="event.stopPropagation()">Code</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-modal="modal-solar">
+      <img src="images/d-tek1.jpg" alt="Solar Website">
+      <h3>D-TEK Solar </h3>
+      <p>HTML + CSS + JavaScript</p>
+      <div class="card-buttons">
+        <a href="https://d-tek.netlify.app" target="_blank" class="btn" onclick="event.stopPropagation()">Live Demo</a>
+        <a href="https://github.com/youngimmortal-p/Dtech.git" target="_blank" class="btn-outline" onclick="event.stopPropagation()">Code</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-modal="modal-gameverse">
+      <img src="images/gameverse1.jpg" alt="Gameverse Ticket">
+      <h3>Gameverse Event Ticket Generator</h3>
+      <p>HTML + CSS + Firebase</p>
+      <div class="card-buttons">
+        <a href="https://gameverse10.netlify.app" target="_blank" class="btn" onclick="event.stopPropagation()">Live Demo</a>
+        <a href="https://github.com/youngimmortal-p/chillfest" target="_blank" class="btn-outline" onclick="event.stopPropagation()">Code</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-modal="modal-ecommerce">
+      <img src="images/omosquare2.jpg" alt="E-Commerce Store">
+      <h3>Omosquare Fabrics</h3>
+      <p>Javascript + Firebase</p>
+      <div class="card-buttons">
+        <a href="https://omosquarefabrics.netlify.app" target="_blank" class="btn" onclick="event.stopPropagation()">Live Demo</a>
+        <a href="https://github.com/youngimmortal-p/Omosquare-fabrics.git" target="_blank" class="btn-outline" onclick="event.stopPropagation()">Code</a>
+      </div>
+    </div>
+    
+    <div class="project-card" data-modal="modal-marvel-luxe">
+  <img src="images/marvel-luxehero.jpg" alt="Marvel Luxe Fashion Store">
+  <h3>Marvel Luxe Fashion Store</h3>
+  <p>HTML + CSS + JavaScript</p>
+  <div class="card-buttons">
+    <a href="https://marvel-luxe.netlify.app" target="_blank" class="btn" onclick="event.stopPropagation()">Live Demo</a>
+    <a href="https://github.com/youngimmortal-p/marvel-luxe.git" target="_blank" class="btn-outline" onclick="event.stopPropagation()">Code</a>
+  </div>
+</div>
+  </div>
+</section>
+
+<!-- Project Modals - PUT THESE AT VERY BOTTOM OF BODY -->
+<div id="modal-eat-chill" class="project-modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <div class="modal-slider">
+      <div class="slider-images">
+        <img src="images/eatnchill1.jpg" class="slide active">
+        <img src="images/eatnchill2.jpg" class="slide">
+       
+      </div>
+      <button class="slider-btn prev">‹</button>
+      <button class="slider-btn next">›</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-tags">
+      <span class="tag">HTML</span>
+      <span class="tag">CSS</span>
+      <span class="tag">Javascript</span>
+      <span class="tag tag-accent">Responsive</span>
+      </div>
+    
+    <h2>Eat & Chill Restaurant Website</h2>
+    <p class="modal-desc">Multi-page restaurant website designed for a modern dining brand.</p>
+    
+    <h3>Key Features</h3>
+    <ul>
+      <li><strong>Multi-Page setup: </strong>Home, About, Menu, Contact pages</li>
+      <li><strong>Custom Loader: </strong>Custom loading animation on each page transition</li>
+      <li><strong>Mobile Menu: </strong>Fully responsive mobile menu</li>
+      <li><strong>Food Focus: </strong>Clean layout optimized for food display</li>
+    </ul>
+    <div class="result-box">
+    <p><strong>Result:</strong> Professional online presence that showcases menu + vibe, making it easy for customers to explore and contact the restaurant.</p>
+    </div>
+    <div class="modal-buttons">
+        <a href="https://foodies-ten-plum.vercel.app" target="_blank" class="btn" onclick="event.stopPropagation()">Live Demo</a>
+        <a href="https://github.com/youngimmortal-p/foodies.git" target="_blank" class="btn-outline" onclick="event.stopPropagation()">View Code</a>
+      </div>
+  </div>
+</div>
+</div>
+
+<!-- Restaurant + Admin -->
+<div id="modal-eat-chill-admin" class="project-modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <div class="modal-slider">
+      <div class="slider-images">
+        <img src="images/foodies1.jpg" class="slide active">
+        <img src="images/foodies2.jpg" class="slide">
+      </div>
+      <button class="slider-btn prev">‹</button>
+      <button class="slider-btn next">›</button>
+    </div>
+    
+    <div class="modal-body">
+      <div class="modal-tags">
+        <span class="tag">React</span>
+        <span class="tag">Tailwind</span>
+        <span class="tag">Firebase</span>
+        <span class="tag tag-accent">Admin Panel</span>
+      </div>
+      
+      <h2>Foodies</h2>
+      <p class="modal-desc">Modern restaurant site with dynamic menu filtering and secure admin access. Owner can update menu without touching code.</p>
+      
+      <h3>Key Features</h3>
+      <ul>
+        <li><strong>Menu filter:</strong> Sort dishes by category instantly</li>
+        <li><strong>Admin login:</strong> Firebase Auth for secure access</li>
+        <li><strong>Tailwind UI:</strong> Fast, clean, mobile-first design</li>
+        <li><strong>Real-time updates:</strong> Menu changes sync live via Firebase</li>
+      </ul>
+      
+      <div class="result-box">
+        <strong>Result:</strong> Owner manages menu without code. Customers get fast filtering + smooth mobile experience, increasing engagement.
+      </div>
+      
+      <div class="modal-buttons">
+        <a href="https://resturant-frontend-one.vercel.app" target="_blank" class="btn">Live Demo</a>
+        <a href="https://github.com/youngimmortal-p/resturant-frontend.git" target="_blank" class="btn-outline">View Code</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Solar Website -->
+<div id="modal-solar" class="project-modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <div class="modal-slider">
+      <div class="slider-images">
+        <img src="images/d-tek1.jpg" class="slide active">
+        <img src="images/d-tek2.jpg" class="slide">
+      </div>
+      <button class="slider-btn prev">‹</button>
+      <button class="slider-btn next">›</button>
+    </div>
+    
+    <div class="modal-body">
+      <div class="modal-tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag tag-accent">Lead Gen</span>
+      </div>
+      
+      <h2>D-TEK SOLAR</h2>
+      <p class="modal-desc">D-TEK SOLAR website is built to build trust and capture leads. Lightweight code + SEO optimized for local solar installations.</p>
+      
+      <h3>Key Features</h3>
+      <ul>
+        <li><strong>Lead form:</strong> Contact form for instant quote requests</li>
+        <li><strong>Local SEO:</strong> Optimized to rank in city searches</li>
+        <li><strong>Fast loading:</strong> Minimal JS, lightweight assets</li>
+        <li><strong>Trust signals:</strong> Clean layout that builds credibility</li>
+      </ul>
+      
+      <div class="result-box">
+        <strong>Result:</strong> Clean, trustworthy site that converts visitors into inquiries for solar installations.
+      </div>
+      
+      <div class="modal-buttons">
+        <a href="https://d-tek.netlify.app" target="_blank" class="btn">Live Demo</a>
+        <a href="https://github.com/youngimmortal-p/Dtech.git" target="_blank" class="btn-outline">View Code</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Gameverse Ticket -->
+<div id="modal-gameverse" class="project-modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <div class="modal-slider">
+      <div class="slider-images">
+        <img src="images/gameverse1.jpg" class="slide active">
+        <img src="images/gameverse2.jpg" class="slide">
+      </div>
+      <button class="slider-btn prev">‹</button>
+      <button class="slider-btn next">›</button>
+    </div>
+    
+    <div class="modal-body">
+      <div class="modal-tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Firebase</span>
+        <span class="tag tag-accent">Anti-Fraud</span>
+      </div>
+      
+      <h2>Gameverse Event Ticket Generator</h2>
+      <p class="modal-desc">Custom ticketing system with unique code validation. Prevents duplicate entries and fake tickets at gaming events.</p>
+      
+      <h3>Key Features</h3>
+      <ul>
+        <li><strong>Code generator:</strong> Admin creates unique registration codes</li>
+        <li><strong>Gmail link:</strong> One code = one user registration</li>
+        <li><strong>QR scanner:</strong> Staff validate tickets at entrance</li>
+        <li><strong>Anti-fraud:</strong> Ticket marked invalid after first scan</li>
+        <li><strong>Real-time DB:</strong> Firebase handles 200+ scans instantly</li>
+      </ul>
+      
+      <div class="result-box">
+        <strong>Result:</strong> Eliminated duplicate entries + fake tickets. Event staff scanned 200+ attendees fast with zero manual checks.
+      </div>
+      
+      <div class="modal-buttons">
+        <a href="https://gameverse10.netlify.app" target="_blank" class="btn">Live Demo</a>
+        <a href="https://github.com/youngimmortal-p/chillfest" target="_blank" class="btn-outline">View Code</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- E-Commerce -->
+<div id="modal-ecommerce" class="project-modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <div class="modal-slider">
+      <div class="slider-images">
+        <img src="images/omosquare1.jpg" class="slide active">
+        <img src="images/omosquare2.jpg" class="slide">
+        <img src="images/omosquare3.jpg" class="slide">
+        <img src="images/omosquare4.jpg" class="slide">
+      </div>
+      <button class="slider-btn prev">‹</button>
+      <button class="slider-btn next">›</button>
+    </div>
+    
+    <div class="modal-body">
+      <div class="modal-tags">
+        <span class="tag">HTML & CSS</span>
+        <span class="tag">Javascript</span>
+        <span class="tag">Firestore/firebase</span>
+        <span class="tag tag-accent">E-Commerce</span>
+      </div>
+      
+      <h2>Omosquare Fabrics</h2>
+      <p class="modal-desc">Omosquare Fabrics is a Full shopping platform with product management, cart and checkout. Built for scale and speed.</p>
+      
+      <h3>Key Features</h3>
+      <ul>
+        <li><strong>Product CRUD:</strong> Add, edit, delete products easily</li>
+        <li><strong>Cart + Checkout:</strong> Smooth purchase flow for users</li>
+        <li><strong>Firebase Auth:</strong> Secure admin login + role</li>
+        <li><strong>Mobile ready:</strong> Responsive shopping experience</li>
+      </ul>
+      
+      <div class="result-box">
+        <strong>Result:</strong> Scalable store that lets owner manage inventory without code while customers get fast, smooth checkout.
+      </div>
+      
+      <div class="modal-buttons">
+        <a href="https://omosquarefabrics.netlify.app" target="_blank" class="btn">Live Demo</a>
+        <a href="https://github.com/youngimmortal-p/Omosquare-fabrics" target="_blank" class="btn-outline">View Code</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modal-marvel-luxe" class="project-modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <div class="modal-slider">
+      <div class="slider-images">
+        <img src="images/marvel-luxe1.jpg" class="slide active">
+        <img src="images/marvel-luxe2.jpg" class="slide">
+        <img src="images/marvel-luxe3.jpg" class="slide">
+      </div>
+      <button class="slider-btn prev">‹</button>
+      <button class="slider-btn next">›</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">Javascript</span>
+        <span class="tag tag-accent">WhatsApp Checkout</span>
+      </div>
+    
+      <h2>Marvel Luxe Fashion Store</h2>
+      <p class="modal-desc">Mini e-commerce website for an online fashion vendor with direct product pricing + WhatsApp checkout.</p>
+    
+      <h3>Key Features</h3>
+      <ul>
+        <li><strong>Product Catalog: </strong>Grid layout showing products, images, and prices directly</li>
+        <li><strong>WhatsApp Checkout: </strong>One-click button opens WhatsApp with pre-filled order details</li>
+        <li><strong>Cart System: </strong>Add/remove items with live total calculation using vanilla JS</li>
+        <li><strong>Order Formatting: </strong>Organized message format with customer info, items, quantities, total</li>
+        <li><strong>Mobile First: </strong>Fully responsive for shoppers browsing from WhatsApp/Instagram</li>
+      </ul>
+      
+      <div class="result-box">
+        <p><strong>Result:</strong> Vendor receives complete orders on WhatsApp instantly. No backend or payment gateway needed. Clean message format reduces back-and-forth and speeds up confirmation + payment.</p>
+      </div>
+      
+      <div class="modal-buttons">
+        <a href="https://your-marvel-luxe-demo.netlify.app" target="_blank" class="btn" onclick="event.stopPropagation()">Live Demo</a>
+        <a href="https://github.com/youngimmortal-p/marvel-luxe.git" target="_blank" class="btn-outline" onclick="event.stopPropagation()">View Code</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Delete modal4 and modal5 if you only have 3 cards. Keep IDs matching data-modal -->
+  <!-- Duplicate modal2, modal3 with your project details -->
+
+  <!-- Tech Stack -->
+ <section id="skills">
+  <h2>Tech Stack</h2>
+  <div class="skills-grid">
+    
+    <div class="skill-card">
+      <i class="fa-brands fa-html5"></i>
+      <span>HTML5</span>
+    </div>
+    
+    <div class="skill-card">
+      <i class="fa-brands fa-css3-alt"></i>
+      <span>CSS3</span>
+    </div>
+    
+    <div class="skill-card">
+      <i class="fa-brands fa-js"></i>
+      <span>JavaScript ES6+</span>
+    </div>
+    
+    <div class="skill-card">
+      <i class="fa-brands fa-react"></i>
+      <span>React.js</span>
+    </div>
+    
+    <div class="skill-card">
+      <i class="fa-solid fa-wind"></i>
+      <span>Tailwind CSS</span>
+    </div>
+    
+    <div class="skill-card">
+      <i class="fa-solid fa-fire"></i>
+      <span>Firebase</span>
+    </div>
+    
+    <div class="skill-card">
+      <i class="fa-brands fa-git-alt"></i>
+      <span>Git + GitHub</span>
+    </div>
+
+  </div>
+</section>
+
+<section id="testimonials" class="testimonials">
+  <div class="container">
+    <h2>What Clients Say</h2>
+    <p class="section-subtitle">Real feedback from people I’ve worked with</p>
+    
+    <div class="testimonial-slider">
+      <div class="testimonial-track">
+        
+        
+
+        <!-- Testimonial 2 - Screenshot -->
+        <div class="testimonial-card screenshot-card">
+          <img src="images/testimonial-gameverse.jpg" alt="Email feedback from Gameverse organizer" loading="lazy">
+          <p class="caption">Gameverse Event Ticket System review</p>
+        </div>
+
+        <!-- Testimonial 3 - Screenshot -->
+        <div class="testimonial-card screenshot-card">
+          <img src="images/testimonial-dtek.jpg" alt="WhatsApp feedback from D-TEK SOLAR client" loading="lazy">
+          <p class="caption">D-TEK SOLAR website feedback</p>
+        </div>
+
+        <!-- Testimonial 4 - Screenshot -->
+        <div class="testimonial-card screenshot-card">
+          <img src="images/testimonial-marvelluxe.jpg" alt="WhatsApp feedback from Omosquare Fabrics" loading="lazy">
+          <p class="caption">Marvel Luxe e-commerce feedback</p>
+        </div>
+
+      </div>
+      
+      <!-- Navigation Dots -->
+      <div class="testimonial-dots"></div>
+      
+      <!-- Arrows -->
+      <button class="slider-btn prev" aria-label="Previous testimonial">‹</button>
+      <button class="slider-btn next" aria-label="Next testimonial">›</button>
+    </div>
+  </div>
+</section>
+
+  <!-- CTA -->
+<section id="contact">
+  <div class="contact-wrapper">
+    <h2>Ready To Build Your Next Project?</h2>
+    <p>Whether you need a business website, eCommerce store, admin dashboard, event platform, or custom web app — I'm ready to help bring your vision to life.</p>
+    <p class="contact-sub">Let's create a website that not only looks great but delivers real results for your business.</p>
+    
+    <!-- WhatsApp CTA button -->
+    <a href="https://wa.me/2347075028734?text=Hi%20[Your%20Name],%20I%20saw%20your%20portfolio%20and%20want%20to%20discuss%20a%20project" 
+       class="btn magnetic" 
+       target="_blank">
+       <i class="fa-brands fa-whatsapp"></i> Chat On WhatsApp
+    </a>
+    
+    <div class="contact-links">
+      <a href="mailto:odup25@gmail.com">
+        <i class="fa-solid fa-envelope"></i> odup25@gmail.com
+      </a>
+      <a href="https://github.com/youngimmortal-p" target="_blank">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/paul-odugbemi" target="_blank">
+        <i class="fa-brands fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
